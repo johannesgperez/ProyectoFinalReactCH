@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav a {
+  color: #333;
+  padding: 4px 25px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  color: inherit;
+  display: block;
+  font-size: 3em;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}

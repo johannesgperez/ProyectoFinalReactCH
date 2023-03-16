@@ -1,0 +1,9 @@
+h2 {
+  text-align: center;
+}
+
+.products-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}

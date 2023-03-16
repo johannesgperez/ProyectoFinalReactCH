@@ -1,0 +1,15 @@
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+nav img {
+  width: 25%;
+  height: auto;
+}

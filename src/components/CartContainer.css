@@ -1,0 +1,92 @@
+.cart .product-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.product-detail-summary {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-detail-summary p {
+  margin: 1rem;
+}
+
+.product-detail-summary p span {
+  color: black;
+  font-size: 18px;
+}
+
+h4 {
+  color: rgba(79, 79, 79, 0.732);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+th {
+  text-align: left;
+  background-color: #ddd;
+  padding: 0.5rem;
+}
+
+.finalize-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 auto;
+}
+
+.finalize-button {
+  display: inline;
+  line-height: 1;
+  margin: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.empty-button {
+  display: inline;
+  line-height: 1;
+  margin: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button {
+  appearance: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.emptyCartIcon {
+  font-size: 4rem;
+  color: hwb(211 0% 14%);
+  margin: 2rem;
+}
