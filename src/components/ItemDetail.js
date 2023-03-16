@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
-
 import { Link } from "react-router-dom";
-
 import "./ItemDetail.css";
 
 export const ItemDetail = ({ product }) => {
@@ -17,25 +14,34 @@ export const ItemDetail = ({ product }) => {
   };
 
   return (
-    <div className="product-detail">
-      <h2>{product.product_name}</h2>
-      <div className="product-detail-info">
-        <div>
-          <img src={product.imageUrl} alt="product_image" />
-          <h5>Categoria: {product.category}</h5>
+    <>
+      {product.product_name ? (
+        <div className="product-detail">
+          <h2>{product.product_name}</h2>
+          <div className="product-detail-info">
+            <div>
+              <img src={product.imageUrl} alt="product_image" />
+              <h5>Categoria: {product.category}</h5>
+            </div>
+            <div>
+              <h4 className="product-detail-info-price">${product.price}</h4>
+              <ItemCount initial={1} stock={product.stock} onAdd={onAdd} />
+              {quantity > 0 && (
+                <Link className="product-detail-info-button" to="/shoppingCart">
+                  Ir al Carrito
+                </Link>
+              )}
+            </div>
+          </div>
         </div>
+      ) : (
         <div>
-          <h4 className="product-detail-info-price">${product.price}</h4>
-          <ItemCount initial={1} stock={product.stock} onAdd={onAdd} />
-          {quantity > 0 && (
-            <Link className="product-detail-info-button" to="/shoppingCart">
-              Ir al Carrito
-            </Link>
-          )}
+        <p>El producto no existe</p>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 
 export default ItemDetail;
+
